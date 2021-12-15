@@ -1,0 +1,17 @@
+server:
+  port: 8083
+
+spring:
+  jpa:
+    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: validate
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/currency-converter-schema
+    username: postgres
+    password: admin12345
+    driverClassName: org.postgresql.Driver
